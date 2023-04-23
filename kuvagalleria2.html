@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuvagalleria</title>
+    <link rel="stylesheet" href="kuvagalleria2.css">
+</head>
+<body>
+       <!-- Headeri-->
+       <header id="header">
+        <a href="#" class="logo">
+            <img src="./images/tksvpklogo_it2.png" alt="TKS VPK:n logo">
+        </a>
+        <ul>
+            <li><a href="index.html#home" onclick="toggle()">Etusivu</a></li>
+            <li><a href="index.html#tietoa" onclick="toggle()">Tietoa</a></li>
+            <li><a href="index.html#osastot" onclick="toggle()">Osastot</a></li>
+            <li><a href="index.html#historia" onclick="toggle()">Historia</a></li>
+            <li><a href="kuvagalleria2.html" onclick="toggle()">Kuvagalleria</a></li>
+            <li><a href="index.html#contact " onclick="toggle()">Ota yhteyttä</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+
+    </header>
+<!-- Banneri-->
+<section class="banner" id="home">
+    <h2>Kuvagalleria</h2>
+
+</section>
+<!-- Tietoa-->
+<section class="sec" id="tietoa">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Tänne keräämme kuvia TKSVPK:n toiminnasta</h3>
+        </div>
+    </div>
+</section>
+
+    <div class="gallerycontainer">
+        <div class="gallery-image">
+            <img src="./images/kuva_miehisto1.jpg" alt="Pelastaminen katollaan olevasta ajoneuvosta">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_miehisto2.jpg" alt="Potilaan pelastaminen ajoneuvosta">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_miehisto3.jpg" alt="Ajoneuvon sammuttaminen">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_miehisto4.jpg" alt="Ajoneuvon sammuttaminen">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_nuoret1.jpg" alt="Nuoriso-osasto harjoittelee">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_nuoret2.jpg" alt="Nuoriso-osasto harjoittelee">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_nuoret3.jpg" alt="Nuoriso-osasto harjoittelee">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_nuoret4.jpg" alt="Nuoriso-osasto harjoittelee">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_naiset1.jpg" alt="Naisosasto valistustyössä">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/kuva_naiset2.jpg" alt="Naisosasto valistustyössä">
+        </div>
+    </div>
+ <br> <br>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

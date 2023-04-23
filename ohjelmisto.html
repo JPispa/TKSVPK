@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuvagalleria</title>
+    <link rel="stylesheet" href="ohjelmisto.css">
+</head>
+<body>
+       <!-- Headeri-->
+       <header id="header">
+        <a href="#" class="logo">
+            <img src="./images/tksvpklogo_it2.png" alt="TKS VPK:n logo">
+        </a>
+        <ul>
+            <li><a href="index.html#home" onclick="toggle()">Etusivu</a></li>
+            <li><a href="index.html#tietoa" onclick="toggle()">Tietoa</a></li>
+            <li><a href="index.html#osastot" onclick="toggle()">Osastot</a></li>
+            <li><a href="index.html#historia" onclick="toggle()">Historia</a></li>
+            <li><a href="kuvagalleria2.html" onclick="toggle()">Kuvagalleria</a></li>
+            <li><a href="index.html#contact " onclick="toggle()">Ota yhteyttä</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+
+    </header>
+<!-- Banneri-->
+<section class="banner" id="home">
+    <h2>Ohjelmistot</h2>
+
+</section>
+
+<section class="sec work" id="portfolio">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Ohjelmistot</h3>
+            <p>
+                </p>
+        </div>
+        <div class="workBx">
+            <div class="brand1">
+                <a href="./Kausiohjelma_NO_2011_kevat.pdf"> <h2>Nuoriso-osaston kausiohjelma</h2></a>
+            </div>
+
+        </div>
+        <div class="workBx">
+            <div class="brand1">
+                <a href="./Kausiohjelma_NO_2011_kevat.pdf"> <h2>Nuoriso-osaston kausiohjelma</h2></a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    function toggle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
