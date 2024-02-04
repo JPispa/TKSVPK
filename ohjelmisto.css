@@ -99,7 +99,7 @@ header.sticky ul li a
 {
     position: relative;
     width: 100%;
-    min-height: 50vh;
+    min-height: 10vh;
     background: url(./images/site-header02.png);
     background-size: cover;
     display: flex;
