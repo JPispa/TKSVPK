@@ -53,7 +53,6 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px;
-    background:rgba(206, 236, 241, 0.719);
     z-index: 1000;
     transition: 0.6s;
 }
@@ -61,7 +60,7 @@ header
 header.sticky
 {
  padding: 5px 100px;
- background: #fff;
+ background:rgba(206, 236, 241, 0.719);
  border-bottom: 1px solid rgba(0,0,0,.1);   
 }
 
