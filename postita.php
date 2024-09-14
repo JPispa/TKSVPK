@@ -1,6 +1,6 @@
 <?php // ** lomakkeenpostittaja **
 $mailto = "palaute@tksvpk.fi"; // Vaihda tähän oma osoitteesi
-// $heading = "Lomake www-sivulta ".$_SERVER['SERVER_NAME'];
+$heading = "Lomake www-sivulta ".$_SERVER['SERVER_NAME'];
 $charset = "UTF-8";
 // Poista kommentit alta jos haluat omat virhe- ja kiitossivut
 // $thanks = "http://www.yourdomain.tld/thanks.html";
